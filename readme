@@ -1,0 +1,6 @@
+IEEE-754 Decimal-64 floating-point converter (including all special cases)
+• Input: Decimal and base-10 (i.e., 127.0x105) – should handle more than 16 digits
+properly (provide options for the user to choose rounding method). Also, can support
+NaN input
+• Output: (1) binary output with space between section (2) its hexadecimal equivalent (3)
+with option to output in text file.

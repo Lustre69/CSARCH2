@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IEEE-754 Decimal-64 Floating Point Converter</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>IEEE-754 Decimal-64 Floating Point Converter</h1>
+    <form>
+        <label for="dec">Decimal (base-10):</label>
+        <input type="text" id="dec" name="dec" required><br><br>
+        <label for="rounding">Rounding:</label>
+        <select id="rounding" name="rounding">
+            <option value="nearest">Nearest</option>
+            <option value="up">Up</option>
+            <option value="down">Down</option>
+            <option value="zero">Zero</option>
+        </select><br><br>
+        <label for="output">Output Format:</label>
+        <select id="output" name="output">
+            <option value="bin">Binary</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br><br>
+        <input type="button" value="Convert" onclick="convert()"><br><br>
+        <textarea id="result" rows="5" cols="50"></textarea><br><br>
+        <input type="button" value="Save" button onclick="convertandsave()">
+
+            <!-- Include JavaScript file -->
+            <script src="script.js"></script>
+</body>
+</html>
